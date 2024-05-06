@@ -1,5 +1,11 @@
-import appStyles from "./styles/App.style";
+import { IMAGES } from "./data";
+import { View } from "react-native";
+import List from "./components/List";
 
 export default function App() {
-  return <View style={appStyles.main}></View>;
+  return (
+    <View style={{ flex: 1 }}>
+      <List images={IMAGES} />
+    </View>
+  );
 }
